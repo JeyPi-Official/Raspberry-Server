@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+</head>
+
+<body>
+    <h1>MOTOR</h1>
+    <button id="p1">Planta 1</button>
+    <button id="p2">Planta 2</button>
+    <button id="p3">Planta 3</button>
+    <button id="p4">Planta 4</button>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+    const btnP1 = document.getElementById('p1');
+    const btnP2 = document.getElementById('p2');
+    const btnP3 = document.getElementById('p3');
+    const btnP4 = document.getElementById('p4');
+
+    btnP1.addEventListener('click', () => {
+        socket.emit("client", "!PlantOne");
+    });
+
+    btnP2.addEventListener('click', () => {
+        socket.emit("client", "!PlantTwo");
+    });
+
+    btnP3.addEventListener('click', () => {
+        socket.emit("client", "!PlantThree");
+    });
+
+    btnP4.addEventListener('click', () => {
+        socket.emit("client", "!PlantFour");
+    });
+
+</script>
+
+</html>
