@@ -31,8 +31,8 @@ This project is a Node.js server that facilitates real-time communication betwee
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/JeyPi-Official/Raspberry-Server.git
+   cd Server
    ```
 
 2. Install the required packages:
@@ -62,7 +62,7 @@ Once the server is up and running, clients can connect via a web interface serve
 ## Project Structure
 
 ```
-project-directory/
+Server/
 │
 ├── src/
 │   ├── classes/
