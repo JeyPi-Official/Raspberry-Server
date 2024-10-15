@@ -70,7 +70,7 @@ Server/
 │   │   └── Servo.js        # Class for controlling Servo motors
 │   └── index.html          # Web interface for client interaction
 │
-├── app.js                  # Main application logic
+├── index.js                  # Main application logic
 ├── package.json            # Project metadata and dependencies
 └── README.md               # This readme file
 ```
